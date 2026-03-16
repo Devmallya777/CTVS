@@ -1,8 +1,32 @@
 body{
 font-family: Arial;
 margin:0;
-padding:0;
 }
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#003049;
+color:white;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+}
+
+
+/* BANNER */
 
 .banner{
 position:relative;
@@ -10,36 +34,39 @@ position:relative;
 
 .banner-img{
 width:100%;
-height:400px;
+height:450px;
 object-fit:cover;
 }
 
 .banner-text{
 position:absolute;
-bottom:20px;
-left:20px;
+bottom:40px;
+left:40px;
 color:white;
-font-size:28px;
+font-size:40px;
 font-weight:bold;
-background:rgba(0,0,0,0.4);
-padding:10px 20px;
+background:rgba(0,0,0,0.5);
+padding:15px 25px;
 }
 
+
+/* DOCTORS */
+
 .doctors{
-padding:40px;
+padding:60px;
 text-align:center;
 }
 
 .doctor-container{
 display:flex;
 justify-content:center;
-gap:30px;
+gap:40px;
 }
 
 .doctor-card{
 border:1px solid #ccc;
 padding:20px;
-width:200px;
+width:220px;
 border-radius:10px;
 }
 
@@ -53,6 +80,59 @@ border-radius:5px;
 cursor:pointer;
 }
 
-button:hover{
-background:#005f87;
+
+/* PROCEDURES */
+
+.procedures{
+padding:60px;
+background:#f4f4f4;
+text-align:center;
+}
+
+.procedure-container{
+display:flex;
+justify-content:center;
+gap:30px;
+}
+
+.procedure-card{
+width:250px;
+background:white;
+padding:15px;
+border-radius:10px;
+}
+
+.procedure-card img{
+width:100%;
+border-radius:8px;
+}
+
+
+/* APPOINTMENT */
+
+.appointment{
+padding:60px;
+text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+input, select{
+padding:10px;
+width:250px;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#003049;
+color:white;
+text-align:center;
+padding:30px;
 }
