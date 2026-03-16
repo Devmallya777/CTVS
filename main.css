@@ -1,109 +1,32 @@
 body{
+font-family: Arial;
 margin:0;
-font-family:Arial;
-background:#f4f6f9;
+padding:0;
 }
 
-
-/* HERO */
-
-.hero{
+.banner{
 position:relative;
+}
+
+.banner-img{
+width:100%;
 height:400px;
-overflow:hidden;
-}
-
-.hero img{
-width:100%;
-height:100%;
 object-fit:cover;
-filter:brightness(60%);
 }
 
-.hero-text{
+.banner-text{
 position:absolute;
-bottom:40px;
-left:40px;
+bottom:20px;
+left:20px;
 color:white;
-max-width:620px;
+font-size:28px;
+font-weight:bold;
+background:rgba(0,0,0,0.4);
+padding:10px 20px;
 }
-
-.hero-text h1{
-font-size:38px;
-margin:0;
-}
-
-.hero-text p{
-font-size:18px;
-margin-top:8px;
-}
-
-
-/* ABOUT */
-
-.about{
-padding:60px;
-background:white;
-}
-
-.about-container{
-display:flex;
-gap:40px;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.about-text{
-flex:1;
-}
-
-.about-image{
-flex:1;
-}
-
-.about-image img{
-width:100%;
-border-radius:10px;
-}
-
-
-/* PROCEDURES */
-
-.procedures{
-padding:60px;
-text-align:center;
-}
-
-.procedure-list{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-margin-top:20px;
-}
-
-.card{
-background:white;
-padding:15px 25px;
-border-radius:6px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
-}
-
-
-/* FOOTER */
-
-footer{
-background:#222;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-/* DOCTORS */
 
 .doctors{
-padding:60px;
-background:#f7f7f7;
+padding:40px;
 text-align:center;
 }
 
@@ -111,55 +34,25 @@ text-align:center;
 display:flex;
 justify-content:center;
 gap:30px;
-flex-wrap:wrap;
-margin-top:40px;
 }
 
 .doctor-card{
-background:white;
-width:220px;
+border:1px solid #ccc;
 padding:20px;
+width:200px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-transition:0.3s;
 }
 
-.doctor-card:hover{
-transform:translateY(-5px);
-}
-
-.doctor-card img{
-width:100%;
-height:200px;
-object-fit:cover;
-border-radius:8px;
-}
-
-.doctor-card h3{
-margin:10px 0 5px;
-}
-
-.doctor-buttons{
-display:flex;
-flex-direction:column;
-gap:8px;
-margin-top:10px;
-}
-
-.profile{
-background:#1976d2;
+button{
+margin:5px;
+padding:8px 12px;
+background:#0077b6;
 color:white;
 border:none;
-padding:8px;
 border-radius:5px;
 cursor:pointer;
 }
 
-.appoint{
-background:#c62828;
-color:white;
-border:none;
-padding:8px;
-border-radius:5px;
-cursor:pointer;
+button:hover{
+background:#005f87;
 }
